@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    dynamic:
+      primary: mydb #设置默认的数据源或者数据源组,默认值即为mydb
+      datasource:
+        mydb:
+          username: abyss
+          password: postgres
+          driver-class-name: org.postgresql.Driver
+          url: jdbc:postgresql://abyssj.cn:5432/mydb
+        mydb2:
+          username: abyss
+          password: postgres
+          driver-class-name: org.postgresql.Driver
+          url: jdbc:postgresql://abyssj.cn:5432/mydb2
